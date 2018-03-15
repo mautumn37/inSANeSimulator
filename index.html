@@ -6,6 +6,163 @@
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
+    <header>
+      <button id="headerButton" type="button" name="action" onclick="gameStart();" value="switch">押してちょ</button>
+    </header>
+    <div id="phase1">
+      <form id="cbForm" autocomplete="off">
+        <div id="tbl1" class="tbl">
+          <table>
+            <tbody>
+              <tr>
+          			<td><input type="checkbox" class="toggleButton" name="tglCb" value="tgl1" onclick="toggleCardLists(this);" data-off-label="基本ルルブ：＋" data-on-label="基本ルルブ：ー"></td>
+          			<!-- <td>　　　　　　　</td> -->
+              </tr>
+              <tr class="cardLists cl1">
+          			<td><input type="checkbox" name="cbs" value="c0"><label></label></td>
+          			<td><input type="checkbox" name="cbs" value="c12"><label></label></td>
+              </tr>
+              <tr class="cardLists cl1">
+          			<td><input type="checkbox" name="cbs" value="c1"><label></label></td>
+          			<td><input type="checkbox" name="cbs" value="c13"><label></label></td>
+              </tr>
+              <tr class="cardLists cl1">
+          			<td><input type="checkbox" name="cbs" value="c2"><label></label></td>
+          			<td><input type="checkbox" name="cbs" value="c14"><label></label></td>
+              </tr>
+              <tr class="cardLists cl1">
+          			<td><input type="checkbox" name="cbs" value="c3"><label></label></td>
+          			<td><input type="checkbox" name="cbs" value="c15"><label></label></td>
+              </tr>
+              <tr class="cardLists cl1">
+          			<td><input type="checkbox" name="cbs" value="c4"><label></label></td>
+          			<td><input type="checkbox" name="cbs" value="c16"><label></label></td>
+              </tr>
+              <tr class="cardLists cl1">
+          			<td><input type="checkbox" name="cbs" value="c5"><label></label></td>
+          			<td><input type="checkbox" name="cbs" value="c17"><label></label></td>
+              </tr>
+              <tr class="cardLists cl1">
+          			<td><input type="checkbox" name="cbs" value="c6"><label></label></td>
+          			<td><input type="checkbox" name="cbs" value="c18"><label></label></td>
+              </tr>
+              <tr class="cardLists cl1">
+          			<td><input type="checkbox" name="cbs" value="c7"><label></label></td>
+          			<td><input type="checkbox" name="cbs" value="c19"><label></label></td>
+              </tr>
+              <tr class="cardLists cl1">
+          			<td><input type="checkbox" name="cbs" value="c8"><label></label></td>
+          			<td><input type="checkbox" name="cbs" value="c20"><label></label></td>
+              </tr>
+              <tr class="cardLists cl1">
+          			<td><input type="checkbox" name="cbs" value="c9"><label></label></td>
+          			<td><input type="checkbox" name="cbs" value="c21"><label></label></td>
+              </tr>
+              <tr class="cardLists cl1">
+          			<td><input type="checkbox" name="cbs" value="c10"><label></label></td>
+          			<td><input type="checkbox" name="cbs" value="c22"><label></label></td>
+              </tr>
+              <tr class="cardLists cl1">
+          			<td><input type="checkbox" name="cbs" value="c11"><label></label></td>
+          			<td><input type="checkbox" name="cbs" value="c23"><label></label></td>
+              </tr class="cardLists cl1">
+            </tbody>
+          </table>
+        </div>
+        <div id="tbl2" class="tbl">
+          <table>
+            <tbody>
+              <tr>
+          			<td><input type="checkbox" class="toggleButton" name="tglCb" value="tgl2" onclick="toggleCardLists(this);" data-off-label="デッドループ：＋" data-on-label="デッドループ：ー"></td>
+          			<!-- <td>　　　　　　　</td> -->
+              </tr>
+              <tr class="cardLists cl2">
+          			<td><label><input type="checkbox" name="cbs" value="c24"></label></td>
+          			<td></td>
+              </tr>
+              <tr class="cardLists cl2">
+          			<td></td>
+          			<td></td>
+              </tr>
+              <tr class="cardLists cl2">
+          			<td></td>
+          			<td></td>
+              </tr>
+              <tr class="cardLists cl2">
+          			<td></td>
+          			<td></td>
+              </tr>
+              <tr class="cardLists cl2">
+          			<td></td>
+          			<td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="tbl3" class="tbl">
+          <table>
+            <tbody>
+              <tr>
+          			<td><input type="checkbox" class="toggleButton" name="tglCb" value="tgl3" onclick="toggleCardLists(this);" data-off-label="インセインSCP：＋" data-on-label="インセインSCP：ー"></td>
+          			<!-- <td>　　　　　　　</td> -->
+              </tr>
+              <tr>
+          			<td></td>
+          			<td></td>
+              </tr>
+              <tr>
+          			<td></td>
+          			<td></td>
+              </tr>
+              <tr>
+          			<td></td>
+          			<td></td>
+              </tr>
+              <tr>
+          			<td></td>
+          			<td></td>
+              </tr>
+              <tr>
+          			<td></td>
+          			<td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- <table>
+        	<tbody>
+            <tr>
+        			<td>基本ルルブ　　</td>
+        			<td>　　　　　　　</td>
+        			<td>デッドループ　</td>
+        			<td>　　　　　　　</td>
+        			<td>インセインSCP</td>
+        			<td>　　　　　　　</td>
+        		</tr>
+        		<tr>
+        			<td></td>
+        			<td></td>
+        			<td></td>
+        			<td></td>
+        			<td></td>
+        			<td></td>
+        		</tr>
+        	</tbody>
+        </table> -->
+      </div>
+    </form>
+    <div id="phase2" hidden>
+      <form name="KyoukiCardForm" autocomplete="off">
+        <p>山札から引いたカード</p>
+        <textarea rows="16" cols="32" name="KyoukiCardArea" placeholder="ここに狂気カードの内容が表示されます"></textarea>
+        <button id="drawButton" type="button" onclick="drawCard();" value="draw">ドロー！</button>
+        <span id="numCards"></span>
+        <br><br>
+        <input type="checkbox" class="toggleButton" checked data-off-label="ログ：＋" data-on-label="ログ：ー">
+        <textarea id="logArea" rows="4" cols="40" name="drawLog" readonly></textarea>
+      </form>
+    </div>
     <script src="./resources/scripts/KyoukiCard.js" type="text/javascript"></script>
+    <script src="./resources/scripts/functions.js" type="text/javascript"></script>
   </body>
 </html>

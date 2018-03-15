@@ -1,3 +1,60 @@
 body {
+  width: 800px;
   background-color: #DDD4BB;
+}
+header {
+  margin: 15px 0px;
+}
+
+.tbl {
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+table , td, th {
+	border: 1px solid #595959;
+	border-collapse: collapse;
+}
+td, th {
+	/* padding: 3px; */
+	/* width: 30px; */
+	height: 25px;
+  font-size: 12px;
+}
+
+.cardLists {
+  visibility: hidden;
+}
+label,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+textarea {
+  display: block;
+}
+
+.toggleButton:focus:hover {
+  outline: none;
+}
+.toggleButton {
+  /* チェックボックスのレイアウトを無効化 */
+  appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+
+  cursor: pointer;
+}
+.toggleButton:checked::after {
+  content: attr(data-on-label);
+}
+.toggleButton:not(:checked)::after {
+  content: attr(data-off-label);
+}
+.toggleButton:not(:checked) ~ #logArea {
+  display: none;
+}
+.toggleButton:checked ~ #logArea {
+  display: block;
 }
